@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>пример минималистической формы</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	    Пример №1:
+	    <form class="ajaxform">
+            
+            <input type="hidden" name="url" value="">
+            <input type="hidden" name="formname" value="Заказать звонок">
+            
+            <div class="form-group">
+                <label for="ajaxx_imya">Имя:</label>
+                <input type="text" name="ajaxx_imya" value="Петя">
+                <input type="hidden" name="ajaxx_name_imya" value="Имя">
+            </div>
+            
+            <div class="form-group">
+                <label for="ajaxx_phone" class="form-label">Телефон:</label>
+                <input type="text"  name="ajaxx_phone" required="" >
+            </div>
+            
+            
+
+            <!-- Невидимый контейнер для капчи -->
+            <div id="captcha-container" style="display: none;"></div>
+            <input type="hidden" name="smartcaptcha_token" id="smartcaptcha_token">
+
+            <button type="submit" class="submit-btn">Отправить</button>
+                    
+        </form>
+        
+        <div class="messageAjaxForm" style="display:none;background: #9de59d;padding:2rem;">Сообщение успешно отправлено! Сейчас вам перезвонит наш менеджер!</div>
+        
+        
+        
+        
+	    Пример №2:
+	    <form class="ajaxform">
+            
+            <input type="hidden" name="url" value="">
+            <input type="hidden" name="formname" value="Запись к врачу">
+            
+            
+            <div class="form-group">
+                <label for="ajaxx_phone" class="form-label">Телефон:</label>
+                <input type="text"  name="ajaxx_phone" required="" >
+            </div>
+            
+            
+
+            <!-- Невидимый контейнер для капчи -->
+            <div id="captcha-container" style="display: none;"></div>
+            <input type="hidden" name="smartcaptcha_token" id="smartcaptcha_token">
+
+            <button type="submit" class="submit-btn">Отправить</button>
+                    
+        </form>
+        
+        <div class="messageAjaxForm" style="display:none;background: #b9c5b9;padding:3rem;">Ожидайте звонок с номера 8(800)44455666 для подтверждения записи!</div>
+        
+        
+        
+        
+    
+<script src='/jquery-3.7.1.min.js'></script>    
+
+<script src="/ajaxform.js" ></script>
+
+
+</body>
+</html>
